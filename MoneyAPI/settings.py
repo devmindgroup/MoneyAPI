@@ -134,3 +134,11 @@ MINIMUM_TRANSFER = 100
 MAXIMUM_TRANSFER = 200000000
 
 CORS_ALLOW_ALL_ORIGINS: True
+
+CORS_ALLOWED_ORIGINS = [
+    'banktransfer.devmindgroup.com', 'banktransfer.devmindgroup.com:9009'
+]
+
+CSRF_TRUSTED_ORIGINS = [
+    'banktransfer.devmindgroup.com', 'banktransfer.devmindgroup.com:9009'
+]
