@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-01ez(!+#-xt)_#$wihkjlj7r0%rn#oqt5h3vy2bo7qm(883r29
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*', '.devmindgroup.com:9009', '.devmindgroup.com']
+ALLOWED_HOSTS = ['*', '.devmindgroup.com:9009', '.devmindgroup.com', 'banktransfer.devmindgroup.com', 'banktransfer.devmindgroup.com:9009']
 
 
 # Application definition
@@ -132,3 +132,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 MINIMUM_TRANSFER = 100
 MAXIMUM_TRANSFER = 200000000
+
+CORS_ALLOW_ALL_ORIGINS: True
