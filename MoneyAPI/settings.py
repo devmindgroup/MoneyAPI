@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-01ez(!+#-xt)_#$wihkjlj7r0%rn#oqt5h3vy2bo7qm(883r29
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['*', '.devmindgroup.com:9009', '.devmindgroup.com', 'banktransfer.devmindgroup.com', 'banktransfer.devmindgroup.com:9009']
+ALLOWED_HOSTS = ['*',]
 
 
 # Application definition
@@ -136,9 +136,13 @@ MAXIMUM_TRANSFER = 200000000
 CORS_ALLOW_ALL_ORIGINS: True
 
 CORS_ALLOWED_ORIGINS = [
-    'banktransfer.devmindgroup.com', 'banktransfer.devmindgroup.com:9009'
+    "https://banktransfer.devmindgroup.com", "https://banktransfer.devmindgroup.com:9009"
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'banktransfer.devmindgroup.com', 'banktransfer.devmindgroup.com:9009'
+"https://banktransfer.devmindgroup.com", "https://banktransfer.devmindgroup.com:9009"
+]
+
+CORS_ALLOWED_ORIGINS = [
+    "https://banktransfer.devmindgroup.com", "https://banktransfer.devmindgroup.com:9009"
 ]
