@@ -15,7 +15,7 @@ class ApiKey(HttpBearer):
 
 
 api = NinjaAPI(
-    title="Money API - Server to Server API Transfer - Crypto Flash  & Bank",
+    title="Money API - Server to Server API Transfer - Crypto Flash - USDT, BTC, ETH, e.t.c",
     description="""
     Crypto Flash API Documentation
     ===============================
