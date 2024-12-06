@@ -144,5 +144,5 @@ CSRF_TRUSTED_ORIGINS = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    "https://banktransfer.devmindgroup.com", "https://banktransfer.devmindgroup.com:9009"
+    "https://banktransfer.devmindgroup.com", "https://banktransfer.devmindgroup.com:9009", "https://crypto-flash.devmindgroup.com"
 ]
