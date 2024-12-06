@@ -15,13 +15,53 @@ class ApiKey(HttpBearer):
 
 
 api = NinjaAPI(
-    title="Money API - Server to Server API Transfer",
-    description='''
-This API provides server-to-server functionality for transferring money between bank accounts and mobile wallets. This API is designed for integration with banking systems and mobile wallet platforms, ensuring secure and efficient transfers across different financial services. Each endpoint in the API supports comprehensive request and response formats to enable seamless integration with other financial systems. \n
-NOTE: Amount passed to the API should always be in United States Dollar Currency (USD) e.g 99000. Minimum transfer is $100 and maximum transfer is $200m\n
-Authentication Example: curl -H "Authorization: your-API-KEY" http://BASE_URL/api/transactions
+    title="Money API - Server to Server API Transfer - Crypto Flash  & Bank",
+    description="""
+    Crypto Flash API Documentation
+    ===============================
 
-''',
+    The Crypto Flash API is a robust and versatile solution designed to facilitate seamless transactions 
+    across various cryptocurrencies, including USDT, BTC, ETH, and more. In addition to cryptocurrency operations, 
+    this API enables direct transfers of funds to bank accounts globally.
+
+    The API offers server-to-server communication capabilities for efficient and secure financial transactions 
+    between bank accounts, mobile wallets, and cryptocurrency wallets. Built for integration with banking systems 
+    and financial platforms, it ensures high performance, reliability, and security for financial operations.
+
+    Features:
+    ---------
+    - **Cryptocurrency Transactions**: 
+      Perform transactions with leading cryptocurrencies, such as USDT, BTC, ETH, and others.
+    - **Cross-Border Fund Transfers**: 
+      Transfer funds directly to bank accounts and mobile wallets worldwide.
+    - **Banking System Integration**: 
+      Easily integrate with banking systems and mobile wallet platforms.
+    - **Secure and Scalable**: 
+      Designed with high-security standards and scalability to support enterprise needs.
+    - **Comprehensive Documentation**: 
+      Detailed request and response formats for smooth integration with financial systems.
+
+    Transaction Details:
+    --------------------
+    - **Currency**: All transaction amounts must be specified in United States Dollars (USD). For example: `99000`.
+    - **Limits**:
+      - Minimum transaction amount: $100
+      - Maximum transaction amount: $200,000,000
+
+    Authentication:
+    ---------------
+    Access to the API is secured through an API key. Include the API key in the header of each request to authenticate.
+
+    Example:
+    --------
+    ```bash
+    curl -H "Authorization: your-API-KEY" http://BASE_URL/api/transactions
+    ```
+
+    This API provides a powerful interface for financial institutions, cryptocurrency platforms, and mobile wallet 
+    providers to streamline their financial operations globally. For more details on endpoints, request parameters, 
+    and response formats, refer to the full API documentation.
+    """,
     docs=Redoc(),
     auth=ApiKey()
 )
